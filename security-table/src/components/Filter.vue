@@ -2,8 +2,8 @@
   <div class="filter">
     <div
       v-for="group in groups"
-      :key="group.id"
-      :class="filterGroup(group)"
+      :key="groups.indexOf(group)"
+      :class="filteredGroup[group]"
       class="filter-group"
       @click="useFilter(group)"
     >
@@ -17,6 +17,7 @@
 export default {
   data() {
     return {
+      filter: "",
       groups: [
         "Access Control & Biometrics",
         "Intruder Alarms",
@@ -30,14 +31,10 @@ export default {
         "Peripheral Services & Components / Tools",
         "Safety & Health",
       ],
-      filter: "",
     };
   },
+  emits: ["useFilter"],
   methods: {
-    filterGroup(str) {
-      if (typeof str === "string")
-        return str.replace(/\s/g, "").replace(/[&()/]/g, "") + "F";
-    },
     useFilter(group) {
       console.log(group);
       this.filter = group;
@@ -46,6 +43,14 @@ export default {
     nullFilter() {
       this.filter = "";
       this.$emit("useFilter", this.filter);
+    },
+  },
+  computed: {
+    filteredGroup() {
+      return this.groups.reduce((result, str) => {
+        result[str] = str.replace(/\s/g, "").replace(/[&()/]/g, "") + "F";
+        return result;
+      }, {});
     },
   },
 };
