@@ -2,9 +2,8 @@
   <div class="search">
     <input
       v-model="input"
-      @input="updateTable"
-      type="text"
       class="search-input"
+      type="text"
       placeholder="Search..."
     />
   </div>
@@ -17,9 +16,9 @@ export default {
       input: "",
     };
   },
-  methods: {
-    updateTable() {
-      this.$emit("updateTable", this.input);
+  watch: {
+    input() {
+      this.$emit("searchBarInput", this.input);
     },
   },
 };
