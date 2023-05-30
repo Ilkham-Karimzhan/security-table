@@ -1,4 +1,5 @@
 # security-table
+[![My Skills](https://skills.thijs.gg/icons?i=java,kotlin,nodejs,figma&theme=light)](https://skills.thijs.gg)
 
 Implement IFSEC Global: The Periodic Table of Security to website.
 
