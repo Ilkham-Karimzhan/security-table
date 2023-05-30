@@ -12,7 +12,7 @@
       <p class="modal-info">
         {{ targetElement.info }}
       </p>
-      s
+
       <p class="modal-text">Примеры использования:</p>
 
       <ul class="modal-list modal-examples">

@@ -2,7 +2,11 @@
   <header class="header">
     <div class="container">
       <nav class="navbar header-navbar">
-        <button class="button">Logo</button>
+        <div class="logo">
+          <a href="#">
+            <img src="@/assets/logo.jpeg" alt="image: logo" />
+          </a>
+        </div>
         <searchBar @searchBarInput="updateTable"></searchBar>
         <button class="button button--secondary">Get More!</button>
       </nav>
