@@ -1,0 +1,66 @@
+.filter
+   display: flex
+   flex-wrap: wrap
+   gap: 0 13px
+
+   padding: 40px 0 40px
+   &-group
+      display: flex
+      align-items: center
+
+      position: relative
+
+      width: 270px
+      height: 21px
+
+      padding: 3px 18px
+
+      border-top: 1px solid #A6A6A6
+
+      font-size: $fz-filter
+      font-weight: 500
+      line-height: 11px
+      color: $c-filter
+
+      transition: 0.3s
+      &--bottom
+         border-bottom: 1px solid #A6A6A6
+      &:hover
+         font-weight: 700
+         font-size: 11px
+      &--active
+         font-weight: 700
+         font-size: 11px
+      &::before
+         content: ""
+         position: absolute
+         top: 3px
+         left: 0
+
+         width: 13px
+         height: 13px
+
+         border-radius: 50%
+         background-color: $b-g1
+.refresh
+   color: $c-filter
+.IntruderAlarmsF::before
+   background-color: $b-g2
+.PhysicalSecurityF::before
+   background-color: $b-g3
+.SecurityGuardingandSupportServicesF::before
+   background-color: $b-g4
+.FacilitiesF::before
+   background-color: $b-g5
+.ITCyberSecurityF::before
+   background-color: $b-g6
+.SafeCitiesF::before
+   background-color: $b-g7
+.VideoSurveillanceCCTVF::before
+   background-color: $b-g8
+.FireAlarmsDetectionProtectionF::before
+   background-color: $b-g9
+.PeripheralServicesComponentsToolsF::before
+   background-color: $b-g10
+.SafetyHealthF::before
+   background-color: $b-g11

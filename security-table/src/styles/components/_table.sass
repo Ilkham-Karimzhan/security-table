@@ -1,0 +1,87 @@
+.table
+   display: flex
+   flex-wrap: wrap
+   gap: 9px
+
+   padding-bottom: 40px
+   &-element
+      grid-area: element
+
+      width: 53px
+      height: 53px
+
+      border-radius: 2px
+      background-color: $b-g1
+
+.element
+   padding: 3px
+
+   user-select: none
+   &-sh
+      margin: 0 0 4px 0
+
+      font-size: $fz-e-title
+      font-weight: 800
+      letter-spacing: -0.01em
+
+      color: inherit
+
+      transition: 0.3s
+   &-name
+      width: 40px
+
+      margin: 0
+
+      font-size: $fz-e-text
+      font-weight: 400
+      line-height: 8px
+      letter-spacing: -0.03em
+
+      color: inherit
+
+      transition: 0.3s
+   &:hover &-sh, &:hover &-name
+      color: black
+
+.IntruderAlarms
+   background-color: $b-g2
+.PhysicalSecurity
+   background-color: $b-g3
+.SecurityGuardingandSupportServices
+   background-color: $b-g4
+.Facilities
+   background-color: $b-g5
+.ITCyberSecurity
+   background-color: $b-g6
+   color: $c-g2
+.SafeCities
+   background-color: $b-g7
+   color: $c-g4
+.VideoSurveillanceCCTV
+   background-color: $b-g8
+.FireAlarmsDetectionProtection
+   background-color: $b-g9
+.PeripheralServicesComponentsTools
+   background-color: $b-g10
+   color: $c-g3
+.SafetyHealth
+   background-color: $b-g11
+.NA
+   background-color: $b-na
+
+.Ti,
+.Ts,
+.Va.VideoSurveillanceCCTV
+   margin-right: 100px
+.Ptz
+   margin-right: 123px
+.Dvr
+   margin-right: 184px
+.MI,
+.Nvr
+   margin-right: 200px
+.Ha.AccessControlBiometrics,
+.Ic,
+.Id,
+.Lk
+   margin-left: 63px
