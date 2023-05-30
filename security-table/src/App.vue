@@ -1,7 +1,7 @@
 <script>
-import Header from "./components/Header.vue";
-import Filter from "./components/Filter.vue";
-import Table from "./components/Table.vue";
+import headerBase from "./components/HeaderBase.vue";
+import groupFilter from "./components/GroupFilter.vue";
+import elementsTable from "./components/ElementsTable.vue";
 export default {
   data() {
     return {
@@ -19,19 +19,21 @@ export default {
     },
   },
   components: {
-    Header,
-    Filter,
-    Table,
+    headerBase,
+    groupFilter,
+    elementsTable,
   },
 };
 </script>
 
 <template>
-  <Header @updateTable="update"></Header>
-  <main class="main">
-    <div class="container">
-      <Filter @useFilter="setFilter"></Filter>
-      <Table :filter="filter" :search="search"></Table>
-    </div>
-  </main>
+  <div>
+    <headerBase @updateTable="update"></headerBase>
+    <main class="main">
+      <div class="container">
+        <groupFilter @useFilter="setFilter"></groupFilter>
+        <elementsTable :filter="filter" :search="search"></elementsTable>
+      </div>
+    </main>
+  </div>
 </template>

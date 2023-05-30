@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import infoModal from "./Modal.vue";
+import infoModal from "./InfoModal.vue";
 
 export default {
   data() {
