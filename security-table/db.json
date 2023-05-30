@@ -1104,7 +1104,7 @@
     },
     {
       "name": {
-        "en": "Batteries / Chargers / Power Supply",
+        "en": "Batteries / Power Supply",
         "ru": "Батареи / Зарядные устройства / Источник питания",
         "short": "Bt"
       },
@@ -1122,7 +1122,7 @@
     },
     {
       "name": {
-        "en": "Asset Tagging / Tracking Services",
+        "en": "Asset Tagging",
         "ru": "Маркировка активов / Услуги отслеживания",
         "short": "Ag"
       },
