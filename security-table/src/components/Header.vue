@@ -3,7 +3,7 @@
     <div class="container">
       <nav class="navbar header-navbar">
         <button class="button">Logo</button>
-        <SearchBar @updateTable="update"></SearchBar>
+        <SearchBar @searchBarInput="updateTable"></SearchBar>
         <button class="button button--secondary">Get More!</button>
       </nav>
     </div>
@@ -12,9 +12,11 @@
 
 <script>
 import SearchBar from "@/components/SearchBar.vue";
+
 export default {
+  emits: ["updateTable"],
   methods: {
-    update(data) {
+    updateTable(data) {
       this.$emit("updateTable", data);
     },
   },
